@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMEANDRO - Tienda Digital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #111;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 2.5em;
+            color: #ff3333;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+        .category {
+            width: 200px;
+            height: 200px;
+            background-color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            cursor: pointer;
+            color: white;
+        }
+        .category img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        .category:hover {
+            transform: scale(1.1);
+            background-color: #ff3333;
+        }
+        .product-list {
+            display: none;
+            margin-top: 20px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-content: center;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .product {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .product img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-bottom: 5px;
+        }
+        .product a {
+            display: block;
+            color: #ff3333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .product a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>GAMEANDRO</h1>
+    <div class="container">
+        <div class="category" onclick="showProducts('games')">
+            <img src="genshin.jpg" alt="Genshin Impact">
+            Genshin Impact
+        </div>
+        <div class="category" onclick="showProducts('software')">
+            <img src="honkaisr.jpg" alt="Honkai: SR">
+            Honkai: SR
+        </div>
+        <div class="category" onclick="showProducts('ebooks')">
+            <img src="zzz.jpg" alt="ZZZ">
+            ZZZ
+        </div>
+    </div>
+    
+    <div id="games" class="product-list">
+        <h2>Genshin Impact</h2>
+        <div class="product-grid">
+            <div class="product"><img src="cristalgenesis.jpg" alt="Juego 1"><a href="https://wa.me/59162649595?text=Quiero%20comprar%20Juego%201">Cristales Genésis x 60</a></div>
+            <div class="product"><img src="cristalgenesis.jpg" alt="Juego 2"><a href="https://wa.me/59162649595?text=Quiero%20comprar%20Juego%202">Cristales Genésis x 300+30</a></div>
+            <div class="product"><img src="cristalgenesis.jpg" alt="Juego 3"><a href="https://wa.me/59162649595?text=Quiero%20comprar%20Juego%203">Cristales Genésis x 980+110</a></div>
+            <div class="product"><img src="cristalgenesis.jpg" alt="Juego 4"><a href="https://wa.me/59162649595?text=Quiero%20comprar%20Juego%204">Cristales Genésis x 1980+260</a></div>
+            <div class="product"><img src="cristalgenesis.jpg" alt="Juego 5"><a href="https://wa.me/59162649595?text=Quiero%20comprar%20Juego%205">Cristales Genésis x 3280+600</a></div>
+            <div class="product"><img src="cristalgenesis.jpg" alt="Juego 6"><a href="https://wa.me/59162649595?text=Quiero%20comprar%20Juego%206">Cristales Genésis x 6480+1600</a></div>
+            <div class="product"><img src="bendigenshin.png" alt="Juego 6"><a href="https://wa.me/59162649595?text=Quiero%20comprar%20Juego%206">Bendición lunar</a></div>
+        </div>
+    </div>
+    
+    <div id="software" class="product-list">
+        <h2>Honkai: SR</h2>
+        <div class="product-grid">
+            <div class="product"><img src="shard.jpg" alt="Software 1"><a href="#">Esquirla onírica x 60</a></div>
+            <div class="product"><img src="shard.jpg" alt="Software 2"><a href="#">Esquirla onírica x 300+30</a></div>
+            <div class="product"><img src="shard.jpg" alt="Software 3"><a href="#">Esquirla onírica x 980+110</a></div>
+            <div class="product"><img src="shard.jpg" alt="Software 4"><a href="#">Esquirla onírica x 1980+260</a></div>
+            <div class="product"><img src="shard.jpg" alt="Software 5"><a href="#">Esquirla onírica x 3280+600</a></div>
+            <div class="product"><img src="shard.jpg" alt="Software 6"><a href="#">Esquirla onírica x 6480+1600</a></div>
+            <div class="product"><img src="bendisr.png" alt="Software 6"><a href="#">Pase de suministros</a></div>
+        </div>
+    </div>
+    
+    <div id="ebooks" class="product-list">
+        <h2>ZZZ</h2>
+        <div class="product-grid">
+            <div class="product"><img src="monocrhome.jpg" alt="Ebook 1"><a href="#">Monocromos x 60</a></div>
+            <div class="product"><img src="monocrhome.jpg" alt="Ebook 2"><a href="#">Monocromos x 300+30</a></div>
+            <div class="product"><img src="monocrhome.jpg" alt="Ebook 3"><a href="#">Monocromos x 980+110</a></div>
+            <div class="product"><img src="monocrhome.jpg" alt="Ebook 4"><a href="#">Monocromos x 1980+260</a></div>
+            <div class="product"><img src="monocrhome.jpg" alt="Ebook 5"><a href="#">Monocromos x 3280+600</a></div>
+            <div class="product"><img src="monocrhome.jpg" alt="Ebook 6"><a href="#">Monocromos x 6480+1600</a></div>
+            <div class="product"><img src="bendizzz.png" alt="Ebook 6"><a href="#">Suscripción proxy</a></div>
+        </div>
+    </div>
+    
+    <script>
+        function showProducts(category) {
+            document.querySelectorAll('.product-list').forEach(el => el.style.display = 'none');
+            document.getElementById(category).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
