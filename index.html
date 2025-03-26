@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GAMEANDRO - Tienda Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Uncial+Antiqua&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,11 +18,20 @@
             color: white;
             margin: 0;
             padding: 0;
+            padding-bottom: 100px;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
         }
         h1 {
+            font-family: 'Vollkorn', serif;
             margin: 20px 0;
-            font-size: 2.5em;
-            color: #ff3333;
+            font-size: 4em;
+            color: #ff0000;
+            font-weight: bold; /* Hace que el texto sea más grueso */
+            text-transform: uppercase; /* Convierte el texto en mayúsculas */
+            padding-bottom: 5px;
+            display: inline-block;
+            animation: glow 2s infinite alternate; /* Efecto de brillo */
+
         }
         .container {
             display: flex;
@@ -88,12 +103,38 @@
             font-weight: bold;
             margin-top: 5px;
         }
+        .info-message {
+            font-family: 'Vollkorn', serif;
+        }
+        footer {
+            font-family: 'Vollkorn', serif;
+            background-color: #222;
+            color: rgb(255, 0, 0);
+            padding: 1px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+            font-size: 1em;
+            line-height: 0.2;
+        }
+
+        @keyframes glow {
+    0% { text-shadow: 0 0 5px #36ef07d3; }
+    50% { text-shadow: 0 0 20px #03660e; }
+    100% { text-shadow: 0 0 5px #12c908; }
+}
+
     </style>
 </head>
 <body>
     <h1>GAMEANDRO</h1>
     <div class="info-message">
-        👉🏻Los x2 funcionan luego de la primera compra para cada cuenta.👈🏻
+        🔥RECARGAS PARA TUS JUEGOS FAVORITOS🔥
+    </div>
+    <div class="info-message">
+        👉🏻Los x2 funcionan solo para la primera compra de cada pack.👈🏻
     </div>
     <div class="container">
         <div class="category" onclick="showProducts('games')">
@@ -105,46 +146,60 @@
             Honkai: SR
         </div>
         <div class="category" onclick="showProducts('ebooks')">
-            <img src="zzz.jpg" alt="ZZZ">
+            <img src="zzz.jpg" alt="">
             ZZZ
         </div>
     </div>
     
     <div id="games" class="product-list">
-        <h2>Genshin Impact</h2>
+        <h2>Seleccione la recarga:</h2>
         <div class="product-grid">
             <div class="product">
-                <img src="cristalgenesis.jpg" alt="Juego 1">
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Cristales%20Génesis%20x%2060">
+                    <img src="cristalgenesis.jpg" alt="Juego 1">
+                </a>
                 <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Cristales%20Génesis%20x%2060">Cristales Genésis x 60</a>
                 <p class="price">10 Bs</p>
             </div>
             <div class="product">
-                <img src="cristalgenesis.jpg" alt="Juego 2">
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Cristales%20Génesis%20x%20300%20mas%2030">
+                    <img src="cristalgenesis.jpg" alt="Juego 2">
+                </a>
                 <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Cristales%20Génesis%20x%20300%20mas%2030">Cristales Genésis x 300+30</a>
                 <p class="price">40 Bs</p>
             </div>
             <div class="product">
-                <img src="cristalgenesis.jpg" alt="Juego 3">
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Cristales%20Génesis%20x%20980%20mas%20110">
+                    <img src="cristalgenesis.jpg" alt="Juego 3">
+                </a>
                 <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Cristales%20Génesis%20x%20980%20mas%20110">Cristales Genésis x 980+110</a>
                 <p class="price">115 Bs</p>
             </div>
             <div class="product">
-                <img src="cristalgenesis.jpg" alt="Juego 4">
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Cristales%20Génesis%20x%201980%20mas%20260">
+                    <img src="cristalgenesis.jpg" alt="Juego 4">
+                </a>
                 <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Cristales%20Génesis%20x%201980%20mas%20260">Cristales Genésis x 1980+260</a>
                 <p class="price">220 Bs</p>
             </div>
             <div class="product">
-                <img src="cristalgenesis.jpg" alt="Juego 5">
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Cristales%20Génesis%20x%203280%20mas%20600">
+                    <img src="cristalgenesis.jpg" alt="Juego 5">
+                </a>
                 <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Cristales%20Génesis%20x%203280%20mas%20600">Cristales Genésis x 3280+600</a>
                 <p class="price">360 Bs</p>
             </div>
             <div class="product">
-                <img src="cristalgenesis.jpg" alt="Juego 6">
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Cristales%20Génesis%20x%206480%20mas%201600">
+                    <img src="cristalgenesis.jpg" alt="Juego 6">
+                </a>
                 <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Cristales%20Génesis%20x%206480%20mas%201600">Cristales Genésis x 6480+1600</a>
                 <p class="price">720 Bs</p>
             </div>
             <div class="product">
-                <img src="bendigenshin.png" alt="Juego 6">
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20una%20Bendición%20Lunar">
+                    <img src="bendigenshin.png" alt="Juego 6">
+                </a>
                 <a href="https://wa.me/59175545990?text=Quiero%20comprar%20una%20Bendición%20Lunar">Bendición lunar</a>
                 <p class="price">40 Bs</p>
             </div>
@@ -152,40 +207,54 @@
     </div>
     
     <div id="software" class="product-list">
-        <h2>Honkai: SR</h2>
+        <h2>Seleccione la recarga:</h2>
         <div class="product-grid">
             <div class="product">
-                <img src="shard.jpg" alt="Software 1">
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Esquirla%20onírica%20x%2060">
+                    <img src="shard.jpg" alt="Software 1">
+                </a>
                 <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Esquirla%20onírica%20x%2060">Esquirla onírica x 60</a>
                 <p class="price">10 Bs</p>
             </div>
             <div class="product">
-                <img src="shard.jpg" alt="Software 2">
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Esquirla%20onírica%20x%20300%20mas%2030">
+                    <img src="shard.jpg" alt="Software 2">
+                </a>
                 <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Esquirla%20onírica%20x%20300%20mas%2030">Esquirla onírica x 300+30</a>
                 <p class="price">40 Bs</p>
             </div>
             <div class="product">
-                <img src="shard.jpg" alt="Software 3">
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Esquirla%20onírica%20x%20980%20mas%20110">
+                    <img src="shard.jpg" alt="Software 3">
+                </a>
                 <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Esquirla%20onírica%20x%20980%20mas%20110">Esquirla onírica x 980+110</a>
                 <p class="price">115 Bs</p>
             </div>
             <div class="product">
-                <img src="shard.jpg" alt="Software 4">
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Esquirla%20onírica%20x%201980%20mas%20260">
+                    <img src="shard.jpg" alt="Software 4">
+                </a>
                 <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Esquirla%20onírica%20x%201980%20mas%20260">Esquirla onírica x 1980+260</a>
                 <p class="price">220 Bs</p>
             </div>
             <div class="product">
-                <img src="shard.jpg" alt="Software 5">
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Esquirla%20onírica%20x%203280%20mas%20600">
+                    <img src="shard.jpg" alt="Software 5">
+                </a>
                 <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Esquirla%20onírica%20x%203280%20mas%20600">Esquirla onírica x 3280+600</a>
                 <p class="price">360 Bs</p>
             </div>
             <div class="product">
-                <img src="shard.jpg" alt="Software 6">
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Esquirla%20onírica%20x%206480%20mas%201600">
+                    <img src="shard.jpg" alt="Software 6">
+                </a>
                 <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Esquirla%20onírica%20x%206480%20mas%201600">Esquirla onírica x 6480+1600</a>
                 <p class="price">720 Bs</p>
             </div>
             <div class="product">
-                <img src="bendisr.png" alt="Software 6">
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20un%20Pase%20de%20Suministros">
+                    <img src="bendisr.png" alt="Software 6">
+                </a>
                 <a href="https://wa.me/59175545990?text=Quiero%20comprar%20un%20Pase%20de%20Suministros">Pase de suministros</a>
                 <p class="price">40 Bs</p>
             </div>
@@ -193,41 +262,55 @@
     </div>
     
     <div id="ebooks" class="product-list">
-        <h2>ZZZ</h2>
+        <h2>Seleccione la recarga:</h2>
         <div class="product-grid">
             <div class="product">
-                <img src="monocrhome.jpg" alt="Ebook 1">
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Monocromos%20x%2060">
+                    <img src="monocrhome.jpg" alt="Ebook 1">
+                </a>
                 <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Monocromos%20x%2060">Monocromos x 60</a>
                 <p class="price">10 Bs</p>
             </div>
             <div class="product">
-                <img src="monocrhome.jpg" alt="Ebook 2">
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Monocromos%20x%20300%20mas%2030">
+                    <img src="monocrhome.jpg" alt="Ebook 2">
+                </a>
                 <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Monocromos%20x%20300%20mas%2030">Monocromos x 300+30</a>
                 <p class="price">40 Bs</p>
             </div>
             <div class="product">
-                <img src="monocrhome.jpg" alt="Ebook 3">
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Monocromos%20x%20980%20mas%20110">
+                    <img src="monocrhome.jpg" alt="Ebook 3">
+                </a>
                 <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Monocromos%20x%20980%20mas%20110">Monocromos x 980+110</a>
                 <p class="price">115 Bs</p>
             </div>
             <div class="product">
-                <img src="monocrhome.jpg" alt="Ebook 4">
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Monocromos%20x%201980%20mas%20260">
+                    <img src="monocrhome.jpg" alt="Ebook 4">
+                </a>
                 <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Monocromos%20x%201980%20mas%20260">Monocromos x 1980+260</a>
                 <p class="price">220 Bs</p>
             </div>
             <div class="product">
-                <img src="monocrhome.jpg" alt="Ebook 5">
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Monocromos%20x%203280%20mas%20600">
+                    <img src="monocrhome.jpg" alt="Ebook 5">
+                </a>
                 <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Monocromos%20x%203280%20mas%20600">Monocromos x 3280+600</a>
                 <p class="price">360 Bs</p>
             </div>
             <div class="product">
-                <img src="monocrhome.jpg" alt="Ebook 6">
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Monocromos%20x%206480%20mas%201600">
+                    <img src="monocrhome.jpg" alt="Ebook 6">
+                </a>
                 <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Monocromos%20x%206480%20mas%201600">Monocromos x 6480+1600</a>
                 <p class="price">720 Bs</p>
             </div>
             <div class="product">
-                <img src="bendizzz.png" alt="Ebook 6">
-                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20Suscripción%20proxy">Suscripción proxy</a>
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20una%20Suscripción%20proxy">
+                    <img src="bendizzz.png" alt="Software 6">
+                </a>
+                <a href="https://wa.me/59175545990?text=Quiero%20comprar%20una%20Suscripción%20proxy">Pase de suministros</a>
                 <p class="price">40 Bs</p>
             </div>
         </div>
@@ -235,10 +318,22 @@
     
     <script>
         function showProducts(category) {
-            document.querySelectorAll('.product-list').forEach(el => el.style.display = 'none');
-            document.getElementById(category).style.display = 'block';
+            var productLists = document.querySelectorAll('.product-list');
+            productLists.forEach(function(list) {
+                list.style.display = 'none';
+            });
+            var selectedCategory = document.getElementById(category);
+            if (selectedCategory) {
+                selectedCategory.style.display = 'block';
+            }
         }
     </script>
+
+    <footer>
+        <p>Solo es necesario el UID de la cuenta y el servidor.</p>
+        <p>Las recargas demoran de 3 a 5 minutos.</p>
+        <p>El x2 le llegará siempre que dentro del juego usted tenga activado el x2.</p>
+    </footer>
+
 </body>
 </html>
-
